@@ -44,4 +44,13 @@
   } else {
     reveals.forEach((el) => el.classList.add("is-visible"));
   }
+
+  document.querySelectorAll(".accordion__btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const item = btn.closest(".accordion__item");
+      if (!item) return;
+      const open = item.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
 })();
