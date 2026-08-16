@@ -1344,6 +1344,23 @@ select {
   margin-top: 1.75rem;
 }
 
+.process-track--wide {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.saudi-intro {
+  max-width: 52rem;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.saudi-intro strong {
+  color: var(--gold-400);
+}
+
 .process-step {
   padding: 1.15rem 1rem;
   border-radius: var(--radius-sm);
@@ -1673,6 +1690,7 @@ select {
   .channels,
   .detail-block,
   .process-track,
+  .process-track--wide,
   .model-grid,
   .why-grid,
   .check-grid {
